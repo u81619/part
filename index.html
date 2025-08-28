@@ -9,46 +9,49 @@
       font-family: "Cairo", sans-serif;
       display: flex;
       justify-content: center;
-      align-items: center;
-      min-height: 100vh;
+      align-items: flex-start; /* خلتها فوق مو بالنص */
+      background: #000; /* خلفية عامة أسود */
       color: #fff;
-      
+      padding-top: 40px;
+    }
+    .bg-box {
       background: linear-gradient(135deg, #0a2e0a, #064d1f, #043d1a);
+      width: 100%;
+      max-width: 420px; /* عرض قريب من عرض البطاقة */
+      border-radius: 20px;
+      padding: 20px;
+      margin: 0 auto; /* وسطنها */
     }
     .container {
       text-align: center;
-      max-width: 400px; /* صغرت العرض */
-      width: 100%;
+      max-width: 380px; 
+      margin: 0 auto;
     }
-    /* الشعار */
     .logo {
-      width: 90px; /* صغرنا الشعار */
+      width: 90px;
       margin-bottom: 10px;
     }
-    /* اسم الباتش */
     .patch-name {
-      font-size: 20px; /* أصغر */
+      font-size: 20px;
       margin-bottom: 15px;
       color: #0ff;
       text-shadow: 0 0 6px #0ff;
     }
-    /* المستطيل */
     .card {
-      background: rgba(0, 0, 0, 0.6);
+      background: rgba(0, 0, 0, 0.7);
       border-radius: 15px;
-      padding: 18px; /* قللت الحشوة */
+      padding: 18px;
       box-shadow: 0 0 15px rgba(0,0,0,0.7);
       text-align: left;
     }
     .info {
       margin: 10px 0;
-      font-size: 14px; /* صغر الخط */
+      font-size: 14px;
     }
     .label {
       font-weight: bold;
       color: #ccc;
     }
-    /* زر كرابط */
     .download-btn {
       display: block;
       text-decoration: none;
@@ -65,31 +68,25 @@
       border-radius: 6px;    
       transition: 0.3s;
     }
-    .download-btn:hover,
-    .download-btn:active {
+    .download-btn:hover {
       background: #0f0; 
       color: #000; 
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <!-- شعار -->
-    <img src="1.jpg" alt="شعار" class="logo">
-
-    <!-- اسم الباتش -->
-    <div class="patch-name">GAME</div>
-    
-    <!-- المستطيل -->
-    <div class="card">
-      <div class="info"><span class="label">اسم اللعبة:</span> Call of Duty Modern Warfare 2 Campaign Remastered</div>
-      <div class="info"><span class="label">حجم اللعبة :</span> 44 GB</div>
-      <div class="info"><span class="label">باسورد :</span> 4GAMER</div>
-      
-      <!-- الأزرار -->
-      <a href="https://akirabox.to/1RgzRjePXzbp/file" class="download-btn" target="_blank">part1</a>
-      <a href="https://akirabox.to/Pbe3PJKj2GlX/file" class="download-btn" target="_blank">part2</a>
-      <a href="https://akirabox.to/RMKGJXP2V31o/file" class="download-btn" target="_blank">part3</a>
+  <div class="bg-box">
+    <div class="container">
+      <img src="1.jpg" alt="شعار" class="logo">
+      <div class="patch-name">GAME</div>
+      <div class="card">
+        <div class="info"><span class="label">اسم اللعبة:</span> Call of Duty Modern Warfare 2 Campaign Remastered</div>
+        <div class="info"><span class="label">حجم اللعبة :</span> 44 GB</div>
+        <div class="info"><span class="label">باسورد :</span> 4GAMER</div>
+        <a href="https://akirabox.to/1RgzRjePXzbp/file" class="download-btn" target="_blank">part1</a>
+        <a href="https://akirabox.to/Pbe3PJKj2GlX/file" class="download-btn" target="_blank">part2</a>
+        <a href="https://akirabox.to/RMKGJXP2V31o/file" class="download-btn" target="_blank">part3</a>
+      </div>
     </div>
   </div>
 </body>
