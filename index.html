@@ -6,40 +6,39 @@
   <style>
     html, body {
       margin: 0;
-      height: 100vh;              /* ملأ الشاشة */
-      overflow: hidden;           /* ماكو نزول ولا صعود */
+      height: 100vh;              
+      overflow: hidden;           
       font-family: "Cairo", sans-serif;
       display: flex;
       justify-content: center;
       align-items: center;
+      flex-direction: column; /* خلي العناصر فوق وتحت بالنص */
       background: linear-gradient(135deg, #0a2e0a, #064d1f, #043d1a);
       color: #fff;
     }
-    .container {
-      text-align: center;
-      max-width: 550px; /* كبرت العرض */
-      width: 100%;
-    }
     .logo {
-      width: 110px;  /* كبرت الشعار */
-      margin-bottom: 15px;
+      width: 120px;  /* حجم الصورة */
+      margin-bottom: 20px;
     }
     .patch-name {
-      font-size: 28px; /* كبرت اسم الباتش */
+      font-size: 28px;
       margin-bottom: 20px;
       color: #0ff;
       text-shadow: 0 0 8px #0ff;
+      text-align: center;
     }
     .card {
       background: rgba(0, 0, 0, 0.7);
       border-radius: 20px;
-      padding: 30px; /* كبرت المسافة الداخلية */
+      padding: 30px;
+      max-width: 600px;  /* العرض */
+      width: 90%;
       box-shadow: 0 0 20px rgba(0,0,0,0.7);
       text-align: left;
     }
     .info {
       margin: 15px 0;
-      font-size: 18px; /* خط أكبر */
+      font-size: 18px;
     }
     .label {
       font-weight: bold;
@@ -51,7 +50,7 @@
       width: 100%;
       padding: 12px;        
       margin-top: 12px;
-      font-size: 16px;  /* أكبر من قبل */     
+      font-size: 16px;       
       text-align: center;
       text-transform: uppercase;
       letter-spacing: 1px;
@@ -68,17 +67,18 @@
   </style>
 </head>
 <body>
-  <div class="container">
-    <img src="1.jpg" alt="شعار" class="logo">
-    <div class="patch-name">GAME</div>
-    <div class="card">
-      <div class="info"><span class="label">اسم اللعبة:</span> Call of Duty Modern Warfare 2 Campaign Remastered</div>
-      <div class="info"><span class="label">حجم اللعبة :</span> 44 GB</div>
-      <div class="info"><span class="label">باسورد :</span> 4GAMER</div>
-      <a href="https://akirabox.to/1RgzRjePXzbp/file" class="download-btn" target="_blank">part1</a>
-      <a href="https://akirabox.to/Pbe3PJKj2GlX/file" class="download-btn" target="_blank">part2</a>
-      <a href="https://akirabox.to/RMKGJXP2V31o/file" class="download-btn" target="_blank">part3</a>
-    </div>
+  <!-- الصورة فوق -->
+  <img src="1.jpg" alt="شعار" class="logo">
+  <!-- اسم الباتش -->
+  <div class="patch-name">GAME</div>
+  <!-- البطاقة بالنص -->
+  <div class="card">
+    <div class="info"><span class="label">اسم اللعبة:</span> Call of Duty Modern Warfare 2 Campaign Remastered</div>
+    <div class="info"><span class="label">حجم اللعبة :</span> 44 GB</div>
+    <div class="info"><span class="label">باسورد :</span> 4GAMER</div>
+    <a href="https://akirabox.to/1RgzRjePXzbp/file" class="download-btn" target="_blank">part1</a>
+    <a href="https://akirabox.to/Pbe3PJKj2GlX/file" class="download-btn" target="_blank">part2</a>
+    <a href="https://akirabox.to/RMKGJXP2V31o/file" class="download-btn" target="_blank">part3</a>
   </div>
 </body>
 </html>
