@@ -7,72 +7,83 @@
     html, body {
       margin: 0;
       height: 100vh;              
-      overflow: hidden;           
       font-family: "Cairo", sans-serif;
       display: flex;
       justify-content: center;
       align-items: center;
-      flex-direction: column; /* خلي العناصر فوق وتحت بالنص */
       background: linear-gradient(135deg, #0a2e0a, #064d1f, #043d1a);
       color: #fff;
     }
-    .logo {
-      width: 120px;  /* حجم الصورة */
-      margin-bottom: 20px;
-    }
-    .patch-name {
-      font-size: 28px;
-      margin-bottom: 20px;
-      color: #0ff;
-      text-shadow: 0 0 8px #0ff;
+
+    .card {
+      width: 100%;
+      height: 100%;
+      padding: 40px;
+      box-sizing: border-box;
+      background: rgba(0, 0, 0, 0.6);
+      border-radius: 0; /* نلغي الزوايا حتى تبين full screen */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       text-align: center;
     }
-    .card {
-      background: rgba(0, 0, 0, 0.7);
-      border-radius: 20px;
-      padding: 30px;
-      max-width: 600px;  /* العرض */
-      width: 90%;
-      box-shadow: 0 0 20px rgba(0,0,0,0.7);
-      text-align: left;
+
+    .logo {
+      width: 150px;
+      margin-bottom: 20px;
     }
+
+    .patch-name {
+      font-size: 36px;
+      margin-bottom: 30px;
+      color: #0ff;
+      text-shadow: 0 0 12px #0ff, 0 0 25px #0aa;
+    }
+
     .info {
       margin: 15px 0;
-      font-size: 18px;
+      font-size: 20px;
+      line-height: 1.8;
     }
+
     .label {
       font-weight: bold;
-      color: #ccc;
+      color: #0f0;
     }
+
     .download-btn {
       display: block;
       text-decoration: none;
-      width: 100%;
-      padding: 12px;        
-      margin-top: 12px;
-      font-size: 16px;       
+      width: 80%;
+      max-width: 400px;
+      padding: 15px;        
+      margin: 15px auto;
+      font-size: 18px;       
+      font-weight: bold;
       text-align: center;
       text-transform: uppercase;
-      letter-spacing: 1px;
+      letter-spacing: 2px;
       color: #fff;
       background: transparent;
       border: 2px solid #0f0; 
-      border-radius: 8px;    
+      border-radius: 12px;    
       transition: 0.3s;
+      box-shadow: 0 0 12px rgba(0, 255, 0, 0.4);
     }
+
     .download-btn:hover {
       background: #0f0; 
       color: #000; 
+      transform: scale(1.05);
+      box-shadow: 0 0 20px #0f0;
     }
   </style>
 </head>
 <body>
-  <!-- الصورة فوق -->
-  <img src="1.jpg" alt="شعار" class="logo">
-  <!-- اسم الباتش -->
-  <div class="patch-name">GAME</div>
-  <!-- البطاقة بالنص -->
   <div class="card">
+    <img src="1.jpg" alt="شعار" class="logo">
+    <div class="patch-name">GAME</div>
     <div class="info"><span class="label">اسم اللعبة:</span> Call of Duty Modern Warfare 2 Campaign Remastered</div>
     <div class="info"><span class="label">حجم اللعبة :</span> 44 GB</div>
     <div class="info"><span class="label">باسورد :</span> 4GAMER</div>
