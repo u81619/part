@@ -6,11 +6,9 @@
   <style>
     html, body {
       margin: 0;
-      height: 100vh;              
+      height: 100%;
       font-family: "Cairo", sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      overflow: hidden; /* منع السكرول */
       background: linear-gradient(135deg, #0a2e0a, #064d1f, #043d1a);
       color: #fff;
     }
@@ -21,7 +19,6 @@
       padding: 40px;
       box-sizing: border-box;
       background: rgba(0, 0, 0, 0.6);
-      border-radius: 0; /* نلغي الزوايا حتى تبين full screen */
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -42,7 +39,7 @@
     }
 
     .info {
-      margin: 15px 0;
+      margin: 10px 0;
       font-size: 20px;
       line-height: 1.8;
     }
@@ -58,7 +55,7 @@
       width: 80%;
       max-width: 400px;
       padding: 15px;        
-      margin: 15px auto;
+      margin: 12px auto;
       font-size: 18px;       
       font-weight: bold;
       text-align: center;
